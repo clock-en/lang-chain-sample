@@ -12,11 +12,21 @@
         },
         "[python]": {
           "editor.formatOnSave": true,
-          "editor.defaultFormatter": "ms-python.python"
-        }
+          "editor.formatOnPaste": false,
+          "editor.formatOnType": false,
+          "editor.formatOnSaveMode": "file",
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+          }
+        },
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
       },
       "extensions": [
-        "ms-python.python"
+        "ms-python.python",
+        "matangover.mypy",
+        "charliermarsh.ruff"
       ]
     }
   }
