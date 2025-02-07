@@ -1,0 +1,23 @@
+{
+  "name": "lang_chain_app",
+  "dockerComposeFile": "./compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles": {
+          "path": "/bin/bash",
+          "overrideName": true
+        },
+        "[python]": {
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "ms-python.python"
+        }
+      },
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
